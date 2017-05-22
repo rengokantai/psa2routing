@@ -41,8 +41,22 @@ RouterMoudule.forChild([
 ## 9. Styling, Animating, and Watching Routes
 ### 2 Styling the Selected Route
 ```
-<a [routerLink]="['info']" reouterLinkActive="active">
+<div class="wizard">
+<a [routerLink]="['info']" routerLinkActive="active">
  basic
+</a>
+<a [routerLink]="['tags']">
+ search
 </a>
 ```
 
+#### 02:42
+```
+isValid(path: string):boolean{
+ this.validate();
+ if(path){
+  return this.dataIsValid[path];
+ }
+ return (this.dataIsValid && Object.keys(this.dataIsValid).every(d=>this.dataIsValid[d]===true));
+}
+```

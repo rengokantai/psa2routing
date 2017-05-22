@@ -38,3 +38,11 @@ RouterMoudule.forChild([
 }
 ])
 ```
+## 9. Styling, Animating, and Watching Routes
+### 2 Styling the Selected Route
+```
+<a [routerLink]="['info']" reouterLinkActive="active">
+ basic
+</a>
+```
+

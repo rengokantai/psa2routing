@@ -60,3 +60,13 @@ isValid(path: string):boolean{
  return (this.dataIsValid && Object.keys(this.dataIsValid).every(d=>this.dataIsValid[d]===true));
 }
 ```
+
+
+### 4 Watching Routing Events
+```
+imports:[
+RouterModule.forRoot([
+],{enableTracing:true})
+],
+```
+```

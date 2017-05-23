@@ -69,4 +69,19 @@ RouterModule.forRoot([
 ],{enableTracing:true})
 ],
 ```
+
+### 5 Reacting to Routing Events
+
+
+## 11. Route Guards
+### 1 Introduction
 ```
+canActivate - guard navigation to a route
+canActiveChild - guard navigation to a child route
+canDeactive - guard navigation away from a route
+canLoad - prevent async routing
+resolve - prefetch data
+```
+
+
+### 3 

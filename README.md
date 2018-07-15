@@ -1,4 +1,13 @@
 # psa2routing
+## 3. Routing Basics
+### 4 Importing the Angular Router
+
+
+
+|---|---|  
+|RouterModule.forRoot|RouterModule.forChild|  
+
+
 ## 4. Routing to Features
 ### 4 Activating a Route with Code
 ```

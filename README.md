@@ -3,9 +3,9 @@
 ### 4 Importing the Angular Router
 
 
-
-|---|---|  
-|RouterModule.forRoot|RouterModule.forChild|  
+  
+---|---  
+RouterModule.forRoot|RouterModule.forChild 
 
 
 ## 4. Routing to Features

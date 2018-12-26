@@ -23,6 +23,20 @@ byurl
 this.router.navigateByUrl('/welcome');
 ```
 
+## 5. Route Parameters
+### 2 Configuring a Parameterized Route
+```
+@NgModule({
+ imports:[
+   SharedModule,
+   RouterModule.forChild([
+    {path:'',component:},
+    {}
+   ])
+ ]
+})
+```
+
 
 ## 8. Grouping and Component-less Routes
 ### 2 Grouping Routes

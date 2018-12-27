@@ -36,8 +36,35 @@ this.router.navigateByUrl('/welcome');
  ]
 })
 ```
+### 5 Reading Route Parameters: Snapshot
+```
+this.route.snapshot.paramMap.get('id')
+```
+or use observable:
+```
+this.route.paramMap.subscribe(
+```
+### 9 Defining Query Parameters
+```
+[routerLink]=   [queryParams]=
+```
 
 
+retaining parameters
+```
+{queryParamsHandling:'peserve'}
+```
+
+### 10 Reading Query Parameters
+```
+this.route.snapshot.queryParamMap.get('date')
+```
+
+## 6. Prefetching Data Using Route Resolvers 
+### 2 Providing Data with a Route
+```
+this.route.snapshot.data['date']
+```
 ## 8. Grouping and Component-less Routes
 ### 2 Grouping Routes
 ```

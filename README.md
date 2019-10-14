@@ -1,11 +1,26 @@
 # psa2routing
 ## 3. Routing Basics
+
+
+### 3 Defining the Base Path
+```
+ng build --base-href /addpath/
+```
 ### 4 Importing the Angular Router
 
 
 |RouterModule.forRoot|RouterModule.forChild|  
 |---|---|  
 |||
+
+### 8 Using HTML 5 or Hash-based Url
+
+|HTML 5 Style|Hash-based|  
+|---|---|  
+|Leverages HTML5 history pushstate| Leverage Url fragments|
+|Default|Must be set with {useHashL true|
+|More natural||
+|Requires Url rewriting|Server ignores everything after hash|
 
 
 ## 4. Routing to Features
@@ -44,6 +59,15 @@ or use observable:
 ```
 this.route.paramMap.subscribe(
 ```
+
+### 8 Defining Optional Route Parameters
+```
+[routerLink]="['/products',{newkey:oldkey,newkey2:oldkey2}]"
+```
+get:
+```
+this.route.snapshot.paramMap.get('newkey')
+```
 ### 9 Defining Query Parameters
 ```
 [routerLink]=   [queryParams]=
@@ -65,6 +89,19 @@ this.route.snapshot.queryParamMap.get('date')
 ```
 this.route.snapshot.data['date']
 ```
+
+
+## 7. Child Routes
+### 5 Activating Child Routes
+```
+//Absolute path
+this.router.navigate(['/products', this.product.id, 'edit', 'info']);
+
+//Relative path
+this.router.navigate(['info'],{relativeTo: this.route})
+```
+
+
 ## 8. Grouping and Component-less Routes
 ### 2 Grouping Routes
 ```
